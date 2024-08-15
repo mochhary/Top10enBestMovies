@@ -20,15 +20,14 @@
     />
   </head>
   <body>
-    <!-- Navbar Start -->
+    <!-- Navbar Start-->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-      <a class="navbar-brand" href="#">
-        <img
+      <a class="navbar-brand" href="#"
+        ><img
           src="images/top10_60px_t.png"
           alt="Logo Top10en"
           class="rounded-circle"
-        />
-      </a>
+      /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -54,16 +53,33 @@
     <!-- Navbar End -->
 
     <!-- Konten Utama -->
-    <div class="container my-5">
-      <h1 class="display-4 text-center">Tentang Top10en</h1>
-      <p class="lead text-center">
-        Top10en adalah platform yang menyediakan daftar terbaik di berbagai
-        kategori.
-      </p>
+    <div class="container text-center my-5">
+      <div class="rounded p-5" style="background-color: var(--secondary-color)">
+        <div class="mb-4">
+          <h2 class="text-primary">Tentang Top10en</h2>
+          <p>
+            Top10en adalah platform yang memberikan informasi mengenai 10 daftar
+            terbaik sepanjang masa. Kami menyediakan informasi menarik perihal
+            daftar tersebut.
+          </p>
+        </div>
+        <div class="mb-4">
+          <h3 class="text-primary">Kontak Kami</h3>
+          <p>Email: top10en@blablabla.com</p>
+        </div>
+        <div class="mb-4">
+          <h3 class="text-primary">Lokasi Kami</h3>
+          <div
+            id="map"
+            class="rounded mb-4"
+            style="height: 300px; overflow: hidden"
+          ></div>
+        </div>
+      </div>
     </div>
     <!-- Konten Utama End -->
 
-    <!-- Footer Start -->
+    <!-- Footer Start-->
     <footer class="text-center">
       <div class="container">
         <div class="social-links">
@@ -105,9 +121,6 @@
     </footer>
     <!-- Footer End -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="js/scripts.js"></script>
   </body>
