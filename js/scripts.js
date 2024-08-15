@@ -7,6 +7,7 @@ document.getElementById("hamburgerMenu").addEventListener("click", () => {
     navbarNav.classList.add("collapse");
   }
 });
+
 // My JSON
 const movies = [
   {
