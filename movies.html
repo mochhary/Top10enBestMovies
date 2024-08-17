@@ -20,7 +20,7 @@
     />
   </head>
   <body>
-    <!-- Navbar Start-->
+    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <a class="navbar-brand" href="#">
         <img
@@ -32,6 +32,10 @@
       <button
         class="navbar-toggler"
         type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
         aria-label="Toggle navigation"
         id="hamburgerMenu"
       >
@@ -53,13 +57,124 @@
     </nav>
     <!-- Navbar End -->
 
+    <!-- Search Form Start -->
+    <div class="container mt-3">
+      <form class="form-inline search-form w-100" onsubmit="return false;">
+        <div class="input-group w-50 mx-auto">
+          <input
+            class="form-control search-input"
+            type="search"
+            placeholder="Cari Top10en Lainnya"
+            aria-label="Search"
+            name="query"
+            required
+            id="searchInput"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary search-btn" type="button">
+              Cari
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Search Form End -->
+
     <!-- Konten Utama -->
-    <div class="container my-5">
-      <div class="row" id="movie-list">
-        <!-- Card akan diisi di sini oleh JavaScript -->
+    <div class="container-fluid my-5">
+      <div class="row">
+        <!-- Daftar Film -->
+        <div class="col-md-8">
+          <div id="movie-list" class="row">
+            <!-- Card -->
+          </div>
+        </div>
+
+        <!-- Sidebar Website Lainnya -->
+        <div class="col-md-4">
+          <h5 class="mb-4">Top10en Website Lainnya</h5>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="#" class="text-decoration-none text-dark"
+                >Top10en Game Open World</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a href="#" class="text-decoration-none text-dark"
+                >Top10en Musisi Terbaik</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a href="#" class="text-decoration-none text-dark"
+                >Top10en Buku Yang Harus Dibaca</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a href="#" class="text-decoration-none text-dark"
+                >Top10en Tempat Wisata Dunia</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a href="#" class="text-decoration-none text-dark"
+                >Top10en Makanan Lezat</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- Konten Utama End -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="movieModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="movieModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="movieModalLabel">Film Detail</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img id="moviePoster" src="" alt="Poster Film" class="img-fluid" />
+            <div class="modal-details">
+              <h5 id="movieTitle"></h5>
+              <p id="movieSynopsis"></p>
+              <p><strong>Genre:</strong> <span id="movieGenre"></span></p>
+              <p><strong>Director:</strong> <span id="movieDirector"></span></p>
+              <p><strong>Producer:</strong> <span id="movieProducer"></span></p>
+              <p><strong>Writer:</strong> <span id="movieWriter"></span></p>
+              <p><strong>Rating:</strong> <span id="movieRating"></span></p>
+              <p><strong>Bintang Film:</strong></p>
+              <div id="movieStarsContainer" class="d-flex flex-wrap">
+                <!-- Foto Aktor -->
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a
+              id="movieLink"
+              href="#"
+              target="_blank"
+              class="btn btn-primary"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer Start-->
     <footer class="text-center">

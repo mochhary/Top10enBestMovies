@@ -20,7 +20,7 @@
     />
   </head>
   <body>
-    <!-- Navbar Start-->
+    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <a class="navbar-brand" href="#"
         ><img
@@ -31,6 +31,10 @@
       <button
         class="navbar-toggler"
         type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
         aria-label="Toggle navigation"
         id="hamburgerMenu"
       >
@@ -51,6 +55,30 @@
       </div>
     </nav>
     <!-- Navbar End -->
+
+    <!-- Search Form Start -->
+    <div class="container mt-3">
+      <form class="form-inline search-form w-100" onsubmit="return false;">
+        <div class="input-group w-50 mx-auto">
+          <input
+            class="form-control search-input"
+            type="search"
+            placeholder="Cari Top10en Lainnya"
+            aria-label="Search"
+            name="query"
+            required
+            id="searchInput"
+      
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary search-btn" type="button">
+              Cari
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Search Form End -->
 
     <!-- Konten Utama -->
     <div class="container text-center my-5">
@@ -74,6 +102,20 @@
             class="rounded mb-4"
             style="height: 300px; overflow: hidden"
           ></div>
+        </div>
+        <div class="mb-4">
+          <h3 class="text-primary">Kirim Saran</h3>
+          <form id="suggestionForm">
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                id="suggestionBox"
+                rows="3"
+                placeholder="Masukkan saran Anda di sini..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim Saran</button>
+          </form>
         </div>
       </div>
     </div>

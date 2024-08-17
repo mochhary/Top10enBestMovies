@@ -32,6 +32,10 @@
       <button
         class="navbar-toggler"
         type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
         aria-label="Toggle navigation"
         id="hamburgerMenu"
       >
@@ -51,23 +55,46 @@
         </ul>
       </div>
     </nav>
-    <!-- Navbar end -->
+    <!-- Navbar End -->
+
+    <!-- Search Form Start -->
+    <div class="container mt-3">
+      <form class="form-inline search-form w-100" onsubmit="return false;">
+        <div class="input-group w-50 mx-auto">
+          <input
+            class="form-control search-input"
+            type="search"
+            placeholder="Cari Top10en Lainnya"
+            aria-label="Search"
+            name="query"
+            required
+            id="searchInput"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary search-btn" type="button">
+              Cari
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Search Form End -->
 
     <!-- Konten Utama -->
     <div class="container text-center my-5">
       <div class="rounded p-5" style="background-color: var(--secondary-color)">
-        <h1 class="display-4">Selamat Datang di Top10en</h1>
-        <p class="lead">Film dengan Rating IMDB Tertinggi</p>
+        <h1 class="display-4 text-primary font-weight-bold">Film dengan Rating IMDB Tertinggi</h1>
+        <p class="lead">Temukan daftar film terbaik sepanjang masa</p>
         <a
           href="movies.html"
-          class="btn btn-lg btn-outline-light mt-4 px-5 rounded-pill"
+          class="btn btn-lg btn-primary mt-4 px-5 rounded-pill"
           >Jelajahi Film</a
         >
       </div>
     </div>
-    <!-- Konten Utama end -->
+    <!-- Konten Utama End -->
 
-    <!-- Slider Start-->
+    <!-- Slider Website Lainnya Start -->
     <div
       id="top10enCarousel"
       class="carousel slide my-5 container rounded"
@@ -130,7 +157,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <!-- Slider end -->
+    <!-- Slider Website Lainnya End -->
 
     <!-- Footer Start-->
     <footer class="text-center">
