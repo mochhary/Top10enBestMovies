@@ -24,7 +24,7 @@ const movies = [
     genre: "Drama",
     director: "Frank Darabont",
     producer: "Niki Marvin",
-    writer: "Stephen King (novel), Frank Darabont (screenplay)"
+    writer: "Stephen King, Frank Darabont"
   },
   {
     title: "The Godfather",
@@ -40,7 +40,7 @@ const movies = [
     genre: "Crime, Drama",
     director: "Francis Ford Coppola",
     producer: "Albert S. Ruddy",
-    writer: "Mario Puzo (novel), Francis Ford Coppola (screenplay)"
+    writer: "Mario Puzo, Francis Ford Coppola"
   },
   {
     title: "The Dark Knight",
@@ -88,7 +88,7 @@ const movies = [
     genre: "Biography, Drama, History",
     director: "Steven Spielberg",
     producer: "Steven Spielberg, Gerald R. Molen, Branko Lustig",
-    writer: "Thomas Keneally (book), Steven Zaillian (screenplay)"
+    writer: "Thomas Keneally, Steven Zaillian "
   },
   {
     title: "Pulp Fiction",
@@ -104,7 +104,7 @@ const movies = [
     genre: "Crime, Drama",
     director: "Quentin Tarantino",
     producer: "Lawrence Bender",
-    writer: "Quentin Tarantino, Roger Avary (stories)"
+    writer: "Quentin Tarantino, Roger Avary"
   },
   {
     title: "The Lord of the Rings: The Return of the King",
@@ -120,7 +120,7 @@ const movies = [
     genre: "Action, Adventure, Drama",
     director: "Peter Jackson",
     producer: "Peter Jackson, Fran Walsh, Barrie M. Osborne",
-    writer: "J.R.R. Tolkien (book), Fran Walsh, Philippa Boyens, Peter Jackson (screenplay)"
+    writer: "J.R.R. Tolkien, Fran Walsh, Philippa Boyens, Peter Jackson"
   },
   {
     title: "The Good, the Bad and the Ugly",
@@ -152,7 +152,7 @@ const movies = [
     genre: "Drama",
     director: "David Fincher",
     producer: "Art Linson, Ceán Chaffin, Ross Grayson Bell",
-    writer: "Chuck Palahniuk (novel), Jim Uhls (screenplay)"
+    writer: "Chuck Palahniuk, Jim Uhls"
   },
   {
     title: "Forrest Gump",
@@ -168,7 +168,7 @@ const movies = [
     genre: "Drama, Romance",
     director: "Robert Zemeckis",
     producer: "Wendy Finerman, Steve Starkey, Steve Tisch",
-    writer: "Winston Groom (novel), Eric Roth (screenplay)"
+    writer: "Winston Groom, Eric Roth"
   }
 ];
 
