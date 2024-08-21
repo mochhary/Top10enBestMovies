@@ -330,23 +330,38 @@ footer a:hover {
 
   /* Perubahan untuk tampilan modal pada layar kecil */
   .modal-body {
-    flex-direction: column; /* Ubah arah flex menjadi kolom */
-    align-items: center; /* Pusatkan konten */
+    flex-direction: column; /* Mengubah arah layout menjadi kolom */
+    align-items: center; /* Pusatkan semua konten */
     text-align: center;
+    padding: 0; /* Menghilangkan padding ekstra untuk tampilan lebih kompak */
   }
 
   .modal-body img#moviePoster {
     width: 100%; /* Poster memenuhi lebar layar */
     height: auto;
-    margin-bottom: 20px; /* Berikan jarak bawah pada poster */
+    margin-bottom: 15px; /* Memberikan jarak di bawah poster */
   }
 
   .modal-body .modal-details {
     text-align: center;
+    width: 100%; /* Memastikan konten detail memenuhi lebar layar */
+  }
+
+  #movieStarsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Memusatkan konten aktor */
+    gap: 10px; /* Berikan jarak antara aktor */
   }
 
   #movieStarsContainer div {
-    margin: 10px 0; /* Atur margin untuk memusatkan konten */
-    width: 100%;
+    margin: 0;
+    width: 100%; /* Mengatur setiap aktor memenuhi lebar layar */
+    text-align: center; /* Pusatkan konten aktor */
+  }
+
+  .modal-footer {
+    justify-content: center;
+    padding-top: 10px;
   }
 }
