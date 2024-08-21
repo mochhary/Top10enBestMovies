@@ -327,4 +327,26 @@ footer a:hover {
   footer a {
     margin-bottom: 10px;
   }
+
+  /* Perubahan untuk tampilan modal pada layar kecil */
+  .modal-body {
+    flex-direction: column; /* Ubah arah flex menjadi kolom */
+    align-items: center; /* Pusatkan konten */
+    text-align: center;
+  }
+
+  .modal-body img#moviePoster {
+    width: 100%; /* Poster memenuhi lebar layar */
+    height: auto;
+    margin-bottom: 20px; /* Berikan jarak bawah pada poster */
+  }
+
+  .modal-body .modal-details {
+    text-align: center;
+  }
+
+  #movieStarsContainer div {
+    margin: 10px 0; /* Atur margin untuk memusatkan konten */
+    width: 100%;
+  }
 }
